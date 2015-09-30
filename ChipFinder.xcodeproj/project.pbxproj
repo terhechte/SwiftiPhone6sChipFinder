@@ -12,6 +12,8 @@
 		4D2E078A1BBC636D00453256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E07881BBC636D00453256 /* Main.storyboard */; };
 		4D2E078C1BBC636D00453256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E078B1BBC636D00453256 /* Assets.xcassets */; };
 		4D2E078F1BBC636D00453256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2E078D1BBC636D00453256 /* LaunchScreen.storyboard */; };
+		4D2FBFB61BBC67A800EB86D0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2FBFB51BBC67A800EB86D0 /* CoreFoundation.framework */; };
+		4D2FBFB81BBC685000EB86D0 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2FBFB71BBC685000EB86D0 /* libMobileGestalt.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		4D2E078B1BBC636D00453256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2E078E1BBC636D00453256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D2E07901BBC636D00453256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2FBFB41BBC662500EB86D0 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4D2FBFB51BBC67A800EB86D0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4D2FBFB71BBC685000EB86D0 /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2FBFB81BBC685000EB86D0 /* libMobileGestalt.tbd in Frameworks */,
+				4D2FBFB61BBC67A800EB86D0 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,8 @@
 		4D2E07781BBC636D00453256 = {
 			isa = PBXGroup;
 			children = (
+				4D2FBFB71BBC685000EB86D0 /* libMobileGestalt.tbd */,
+				4D2FBFB51BBC67A800EB86D0 /* CoreFoundation.framework */,
 				4D2E07831BBC636D00453256 /* ChipFinder */,
 				4D2E07821BBC636D00453256 /* Products */,
 			);
@@ -60,6 +69,7 @@
 				4D2E078B1BBC636D00453256 /* Assets.xcassets */,
 				4D2E078D1BBC636D00453256 /* LaunchScreen.storyboard */,
 				4D2E07901BBC636D00453256 /* Info.plist */,
+				4D2FBFB41BBC662500EB86D0 /* Bridging-Header.h */,
 			);
 			path = ChipFinder;
 			sourceTree = "<group>";
@@ -95,6 +105,7 @@
 				TargetAttributes = {
 					4D2E07801BBC636D00453256 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 76VT9VZ6GK;
 					};
 				};
 			};
@@ -248,10 +259,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ChipFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stylemac.ChipFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stylemac.amulet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChipFinder/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -259,10 +275,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ChipFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stylemac.ChipFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stylemac.amulet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChipFinder/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -285,6 +306,7 @@
 				4D2E07951BBC636D00453256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
