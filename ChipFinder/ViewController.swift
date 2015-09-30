@@ -8,6 +8,9 @@
 
 import UIKit
 
+@asmname("MGCopyAnswer")
+func MGCopyAnswer(_: CFStringRef) -> Optional<Unmanaged<CFPropertyListRef>>;
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!

@@ -11,12 +11,12 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 
-#if __cplusplus
-extern "C" {
-#endif
-    CFPropertyListRef MGCopyAnswer(CFStringRef property);
-#if __cplusplus
-}
-#endif
+//#if __cplusplus
+//extern "C" {
+//#endif
+//    CFPropertyListRef MGCopyAnswer(CFStringRef property);
+//#if __cplusplus
+//}
+//#endif
 
 #endif /* Bridging_Header_h */
